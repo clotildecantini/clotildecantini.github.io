@@ -11,6 +11,10 @@ author_profile: true
 
 {% endif %}
 
+{% if site.talks.size == 0 %}
+<p>Nothing here yet, but check back soon — I'll list talks and presentations here as I give them.</p>
+{% endif %}
+
 {% for post in site.talks reversed %}
   {% include archive-single-talk.html %}
 {% endfor %}
